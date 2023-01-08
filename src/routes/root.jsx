@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import {
 	Form,
+	Link,
 	NavLink,
 	Outlet,
 	redirect,
@@ -40,7 +41,9 @@ export default function Root() {
 	return (
 		<>
 			<div id="sidebar">
-				<h1>React Router Contacts</h1>
+				<h1>
+					<Link to="/">React Router Contacts</Link>
+				</h1>
 				<div>
 					<Form id="search-form" role="search">
 						<input
